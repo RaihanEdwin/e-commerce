@@ -66,11 +66,21 @@ export default {
           <div class="skeleton-bottom"></div>
         </div>
       </div>
-      <div class="box" v-else>
+      <div class="box boxUn" v-else>
         <div v-if="isUnavailableCategory" class="allContentUnavailable">
-          <button class="next" @click="nextProduct(count++)">
-            Next Product
-          </button>
+          <div class="overlay">
+            <img class="sadFace" src="../assets/sad-face.svg" alt="sad face" />
+          </div>
+          <div class="textAndBtn">
+            <div class="textUnavailable">
+              This product is unavailable to show
+            </div>
+            <div class="buttonContainer">
+              <button class="next" @click="nextProduct(count++)">
+                Next Product
+              </button>
+            </div>
+          </div>
         </div>
         <div v-else class="allContent">
           <div class="image">

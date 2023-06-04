@@ -33,6 +33,44 @@
   box-shadow: 0 4px 6px -1px black, 0 2px 4px -2px black;
 }
 
+/* unavailable page */
+
+.allContentUnavailable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.allContentUnavailable .overlay {
+  top: 11%;
+  left: 6%;
+}
+.sadFace {
+  width: 100%;
+}
+.textAndBtn {
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textUnavailable {
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* end of un
+available page */
+
 .skeleton-image {
   flex: 30%;
   background-color: #ddd;
@@ -98,7 +136,6 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  /* identical to box height */
   padding-bottom: 17px;
 }
 
@@ -113,8 +150,6 @@ hr {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
   color: #3f3f3f;
 }
 .rateTitle {
