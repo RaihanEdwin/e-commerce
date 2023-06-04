@@ -85,7 +85,9 @@ available page */
   grid-template-rows: 30% 100%;
   gap: 20px;
 }
-
+hr {
+  margin: 20px 0;
+}
 .skeleton-top {
   width: 100%;
 
